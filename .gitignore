@@ -1,3 +1,5 @@
 _build
+_esy
 .merlin
 ppx_pgsql.install
+node_modules

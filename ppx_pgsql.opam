@@ -10,14 +10,14 @@ build: [
 ]
 depends: [
     "pgocaml"
-    "ppxlib"
     "dune"                    {build & >= "1.0"}
     "ocamlfind"               {build}
     "ocaml-migrate-parsetree" {>= "0.4"}
+    "ppx_tools_versioned"
 ]
 tags: ["postgresql" "pgocaml" "ppx"]
 available: [
-    ocaml-version >= "4.03"
+    ocaml-version >= "4.03" & <= "4.07"
 ]
 dev-repo: "https://github.com/tizoc/ppx_pgsql.git"
 bug-reports: "https://github.com/tizoc/ppx_pgsql/issues"
